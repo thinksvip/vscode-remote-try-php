@@ -1,10 +1,10 @@
 {
 	"name": "PHP Sample",
-	"dockerFile": "Dockerfile",
+	"image" : "registry.cn-shenzhen.aliyuncs.com/thinks/vscode-remote-php:php",
 	
 	// Use 'settings' to set *default* container specific settings.json values on container create. 
 	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash"
+		"terminal.integrated.shell.linux": "sh"
 	},
 		
 	// Add the IDs of extensions you want installed when the container is created in the array below.
@@ -20,6 +20,6 @@
 	// "postCreateCommand": "php -v",
 
 	// Comment out if you want to use root
-	"remoteUser": "vscode"
+	"remoteUser": "www-data"
 
 }
